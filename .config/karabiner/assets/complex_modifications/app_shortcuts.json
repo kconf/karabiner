@@ -1,0 +1,33 @@
+{
+  "title": "Application shortcuts",
+  "rules": [
+    {
+      "description": "F13 to hyper p",
+      "manipulators": [
+        {
+          "description": "F13 = hyper p",
+          "type": "basic",
+          "from": {
+            "key_code": "f13",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

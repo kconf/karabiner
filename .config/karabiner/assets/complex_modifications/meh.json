@@ -1,0 +1,36 @@
+{
+  "title": "meh key(shift + option + ctrl)",
+  "rules": [
+    {
+      "description": "Scroll Lock to meh",
+      "manipulators": [
+        {
+          "description": "scroll lock = semicolon(click) | meh(hold)",
+          "type": "basic",
+          "from": {
+            "key_code": "scroll_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_shift",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "mission_control"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
